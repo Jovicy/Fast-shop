@@ -1,0 +1,127 @@
+.shopping {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    padding: 5rem 0rem;
+}
+
+.shoppingTitle {
+    display: flex;
+    justify-content: center;
+}
+
+.shoppingTitle h1 {
+    border-bottom: 1px solid var(--black-200);
+    font-family: inherit;
+    padding: 2px;
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.shoppingMain {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.shoppingBriefing {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+}
+
+.shoppingCartMain {
+    display: flex;
+    justify-content: space-between;
+}
+
+.shoppingCartImg img {
+    width: 100%;
+}
+
+.shoppingCartCont {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.shoppingCartTitle h2 {
+    color: #000;
+    font-family: inherit;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.shoppingCart {
+    background: #fff;
+    border-radius: 10px;
+    width: 24%;
+}
+
+.shoppingCartTitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.shoppingCartTitleHead h3 {
+    color: #222;
+    font-family: inherit;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.shoppingCartParagraph p {
+    color: #222;
+    font-family: inherit;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: lowercase;
+}
+
+.shoppingCartRating {
+    display: flex;
+    gap: 10px;
+}
+
+.stars {
+    display: flex;
+    gap: 3px;
+}
+
+.rating h3 {
+    color: #222;
+    font-family: inherit;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: lowercase;
+}
+
+.shoppingCartPrice {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.priceTag {
+    color: #00838F;
+    font-family: inherit;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: lowercase;
+}

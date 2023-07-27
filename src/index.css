@@ -1,13 +1,97 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+  /* Typography */
+  --heading-one: 7.2rem;
+  --heading-two: 4.8rem;
+  --heading-three: 4.0rem;
+  --heading-four: 2.8rem;
+  --heading-five: 2.4rem;
+  --heading-six: 2.0rem;
+  --subHeading: 1.8rem;
+  --paragraph: 1.4rem;
+  --paragraphMd: 1.6rem;
+
+  /* Colors */
+
+  /* yellow */
+  --YellowSourceColor: #F9C32B;
+  --yellow-50: #FFEC58;
+  --yellow-100: #FFD540;
+  --yellow-200: #F4BF26;
+  --yellow-300: #DCA900;
+  --yellow-400: #C39400;
+  --yellow-500: #AB8000;
+  --yellow-600: #936C00;
+  --yellow-700: #7D5900;
+  --yellow-800: #684600;
+  --yellow-900: #553400;
+
+  /* black */
+  --black: #000000;
+  --black-50: #F3F3F3;
+  --black-100: #DDDDDD;
+  --black-200: #C6C6C6;
+  --black-300: #B0B0B0;
+  --black-400: #9B9B9B;
+  --black-500: #868686;
+  --black-600: #727272;
+  --black-700: #5E5E5E;
+  --black-800: #4B4B4B;
+  --black-900: #393939;
+
+  /* blue */
+  --BlueSourceColor: #5DC9D3;
+  --blue-50: #9BFFFF;
+  --blue-100: #84EDF7;
+  --blue-200: #6CD6E1;
+  --blue-300: #53C0CA;
+  --blue-400: #38AAB4;
+  --blue-500: #14949F;
+  --blue-600: #007F8A;
+  --blue-700: #006B75;
+  --blue-800: #005762;
+  --blue-900: #00444E;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  background: rgb(216, 255, 255);
+  background: linear-gradient(0deg, rgba(216, 255, 255, 1) 0%, rgba(216, 255, 255, 1) 100%);
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.btn {
+  padding: 10px 34px;
+  background: var(--blue-300);
+  border-radius: 5px;
+  font-family: inherit;
+  color: #fff;
+  font-weight: 700;
+  border: 2px solid var(--blue-300);
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: transparent;
+  color: var(--blue-300);
+  border: 2px solid var(--blue-300);
+}
+
+.btn-trasp {
+  background: transparent;
+  color: var(--blue-300);
+  border: 2px solid var(--blue-300);
 }

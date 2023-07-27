@@ -1,0 +1,56 @@
+.heroContainer {
+    /* padding: 5rem 0rem; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.heroContent {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.heroContent h1 {
+    font-family: inherit;
+    font-size: 3.375rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.heroContent p {
+    color: #505050;
+    font-family: Inter;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.heroBtnContainer {
+    display: flex;
+    gap: 10px;
+}
+
+.heroImage img {
+    width: 550px;
+}
+
+.heroList {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.heroList li {
+    color: var(--blue-300);
+    font-size: 1.125rem;
+    text-transform: capitalize;
+}
+
+.colored {
+    color: var(--blue-300);
+}

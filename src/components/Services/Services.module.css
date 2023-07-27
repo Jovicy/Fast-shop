@@ -1,0 +1,66 @@
+.services {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10rem;
+    padding: 5rem 0rem;
+}
+
+.servicesTitle h1 {
+    border-bottom: 1px solid var(--black-200);
+    font-family: inherit;
+    padding: 2px;
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.servicesMain {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.servicesCard {
+    background-color: #fff;
+    border-radius: 10px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+}
+
+.cardBriefing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.cardTitle h2 {
+    font-family: inherit;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    text-transform: capitalize;
+    border-bottom: 1px solid var(--black-200);
+    padding: 4px;
+}
+
+.cardParagraph p {
+    color: #272727;
+    text-align: center;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.cardImg img {
+    margin-top: -150px;
+}

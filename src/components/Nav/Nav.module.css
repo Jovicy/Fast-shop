@@ -1,0 +1,34 @@
+.navMain {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.navCont {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.navList {
+    display: flex;
+    gap: 25px;
+} 
+
+.navList li {
+    list-style: none;
+    text-transform: capitalize;
+    font-family: inherit;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.navList li a {
+    text-decoration: none;
+    color: var(--black-800);
+}
+
+.navList li a:hover {
+    color: var(--blue-300);
+}

@@ -2,15 +2,34 @@ import React from 'react'
 import '../../index.css'
 import css from './Contact.module.css'
 import shoppingImage from '../../assets/Shopping 1.png'
+import { motion } from 'framer-motion'
 
 const Contact = () => {
   return (
         <section className={`container ${css.contact}`}>
-            <div className={css.contactTitle}>
+            <motion.div 
+            initial="hidden"
+            whileInView="visible"
+            viewport={{once: true, amount: 0.5}}
+            transition={{ duration: 0.5 }}
+            variants={{
+                hidden: { opacity: 0, y:-50 },
+                visible: { opacity: 1, y: 0 }
+            }}
+            className={css.contactTitle}>
                 <h1>Contact</h1>
-            </div>
+            </motion.div>
             <div className={css.contactMain}>
-                <div className={css.contactForm}>
+                <motion.div 
+                initial="hidden"
+                whileInView="visible"
+                viewport={{once: true, amount: 0.5}}
+                transition={{ duration: 0.5 }}
+                variants={{
+                    hidden: { opacity: 0, x:-50 },
+                    visible: { opacity: 1, x: 0 }
+                }}
+                className={css.contactForm}>
                     <div className={css.contactFormTitle}>
                         <h2>Log In</h2>
                     </div>
@@ -24,10 +43,19 @@ const Contact = () => {
                             Send
                         </button>
                     </div>
-                </div>
-                <div className={css.contactIllusrator}>
+                </motion.div>
+                <motion.div 
+                initial="hidden"
+                whileInView="visible"
+                viewport={{once: true, amount: 0.5}}
+                transition={{ duration: 0.5 }}
+                variants={{
+                    hidden: { opacity: 0, x:50 },
+                    visible: { opacity: 1, x: 0 }
+                }}
+                className={css.contactIllusrator}>
                     <img src={shoppingImage} alt='shopping-img'/>
-                </div>
+                </motion.div>
             </div>
         </section>
     )

@@ -13,22 +13,49 @@ import bookmark from '../../assets/bookmark.png';
 import viewMore from '../../assets/view-more.svg';
 import fullStars from '../../assets/golden-star.svg';
 import blankStar from '../../assets/blank-star.svg';
-
+import { motion } from 'framer-motion';
 
 
 const Shopping = () => {
   return (
     <section className={`container ${css.shopping}`}>
-        <div className={css.shoppingTitle}>
+        <motion.div 
+        initial="hidden"
+        whileInView="visible"
+        viewport={{once: true, amount: 0.5}}
+        transition={{ duration: 0.5 }}
+        variants={{
+            hidden: { opacity: 0, y:-50 },
+            visible: { opacity: 1, y: 0 }
+        }}
+        className={css.shoppingTitle}>
             <h1>Shopping</h1>
-        </div>
+        </motion.div>
         <div className={css.shoppingMain}>
             <div className={css.shoppingCartCont}>
-                <div className={css.shoppingCartTitle}>
+                <motion.div 
+                initial="hidden"
+                whileInView="visible"
+                viewport={{once: true, amount: 0.5}}
+                transition={{ duration: 0.5 }}
+                variants={{
+                    hidden: { opacity: 0, x:-50 },
+                    visible: { opacity: 1, x: 0 }
+                }}
+                className={css.shoppingCartTitle}>
                     <h2>Best Product</h2>
-                </div>
+                </motion.div>
                 <div className={css.shoppingCartMain}>
-                    <div className={css.shoppingCart}>
+                    <motion.div 
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{once: true, amount: 0.5}}
+                    transition={{ duration: 0.5 }}
+                    variants={{
+                        hidden: { opacity: 0, x:-50 },
+                        visible: { opacity: 1, x: 0 }
+                    }}
+                    className={css.shoppingCart}>
                         <div className={css.shoppingCartImg}>
                             <img src={ShoppingImage} alt="cart-img" />
                         </div>
@@ -65,8 +92,17 @@ const Shopping = () => {
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div className={css.shoppingCart}>
+                    </motion.div>
+                    <motion.div 
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{once: true, amount: 0.5}}
+                    transition={{ duration: 0.5 }}
+                    variants={{
+                        hidden: { opacity: 0, x:-80 },
+                        visible: { opacity: 1, x: 0 }
+                    }}
+                    className={css.shoppingCart}>
                         <div className={css.shoppingCartImg}>
                             <img src={headphone} alt="cart-img" />
                         </div>
@@ -103,8 +139,17 @@ const Shopping = () => {
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div className={css.shoppingCart}>
+                    </motion.div>
+                    <motion.div 
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{once: true, amount: 0.5}}
+                    transition={{ duration: 0.5 }}
+                    variants={{
+                        hidden: { opacity: 0, x:-110 },
+                        visible: { opacity: 1, x: 0 }
+                    }}
+                    className={css.shoppingCart}>
                         <div className={css.shoppingCartImg}>
                             <img src={watch} alt="cart-img" />
                         </div>
@@ -141,8 +186,17 @@ const Shopping = () => {
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div className={css.shoppingCart}>
+                    </motion.div>
+                    <motion.div 
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{once: true, amount: 0.5}}
+                    transition={{ duration: 0.5 }}
+                    variants={{
+                        hidden: { opacity: 0, x:-140 },
+                        visible: { opacity: 1, x: 0 }
+                    }}
+                    className={css.shoppingCart}>
                         <div className={css.shoppingCartImg}>
                             <img src={toyCar} alt="cart-img" />
                         </div>
@@ -179,15 +233,33 @@ const Shopping = () => {
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </motion.div>
                 </div>
             </div>
             <div className={css.shoppingCartCont}>
-                <div className={css.shoppingCartTitle}>
+                <motion.div 
+                initial="hidden"
+                whileInView="visible"
+                viewport={{once: true, amount: 0.5}}
+                transition={{ duration: 0.5 }}
+                variants={{
+                    hidden: { opacity: 0, x:-50 },
+                    visible: { opacity: 1, x: 0 }
+                }}
+                className={css.shoppingCartTitle}>
                     <h2>Best Product</h2>
-                </div>
+                </motion.div>
                 <div className={css.shoppingCartMain}>
-                    <div className={css.shoppingCart}>
+                    <motion.div 
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{once: true, amount: 0.5}}
+                    transition={{ duration: 0.5 }}
+                    variants={{
+                        hidden: { opacity: 0, x:140 },
+                        visible: { opacity: 1, x: 0 }
+                    }}
+                    className={css.shoppingCart}>
                         <div className={css.shoppingCartImg}>
                             <img src={aloeVera} alt="cart-img" />
                         </div>
@@ -224,8 +296,17 @@ const Shopping = () => {
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div className={css.shoppingCart}>
+                    </motion.div>
+                    <motion.div 
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{once: true, amount: 0.5}}
+                    transition={{ duration: 0.5 }}
+                    variants={{
+                        hidden: { opacity: 0, x:110 },
+                        visible: { opacity: 1, x: 0 }
+                    }}
+                    className={css.shoppingCart}>
                         <div className={css.shoppingCartImg}>
                             <img src={lipStick} alt="cart-img" />
                         </div>
@@ -262,8 +343,17 @@ const Shopping = () => {
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div className={css.shoppingCart}>
+                    </motion.div>
+                    <motion.div 
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{once: true, amount: 0.5}}
+                    transition={{ duration: 0.5 }}
+                    variants={{
+                        hidden: { opacity: 0, x:80 },
+                        visible: { opacity: 1, x: 0 }
+                    }}
+                    className={css.shoppingCart}>
                         <div className={css.shoppingCartImg}>
                             <img src={crocs} alt="cart-img" />
                         </div>
@@ -300,8 +390,17 @@ const Shopping = () => {
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div className={css.shoppingCart}>
+                    </motion.div>
+                    <motion.div 
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{once: true, amount: 0.5}}
+                    transition={{ duration: 0.5 }}
+                    variants={{
+                        hidden: { opacity: 0, x:50 },
+                        visible: { opacity: 1, x: 0 }
+                    }}
+                    className={css.shoppingCart}>
                         <div className={css.shoppingCartImg}>
                             <img src={glasses} alt="cart-img" />
                         </div>
@@ -338,7 +437,7 @@ const Shopping = () => {
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </motion.div>
                 </div>
             </div>
         </div>

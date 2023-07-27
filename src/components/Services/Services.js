@@ -4,15 +4,34 @@ import css from './Services.module.css'
 import shoppingImg from '../../assets/cart-big.png'
 import orderImg from '../../assets/scooter.png'
 import supportImg from '../../assets/env.png'
+import { motion } from 'framer-motion'
 
 const Services = () => {
   return (
     <section className={`container ${css.services}`}>
-        <div className={css.servicesTitle}>
+        <motion.div 
+        initial="hidden"
+        whileInView="visible"
+        viewport={{once: true, amount: 0.5}}
+        transition={{ duration: 0.5 }}
+        variants={{
+            hidden: { opacity: 0, y:-50 },
+            visible: { opacity: 1, y: 0 }
+        }}
+        className={css.servicesTitle}>
             <h1>services</h1>
-        </div>
+        </motion.div>
         <div className={css.servicesMain}>
-            <div className={css.servicesCard}>
+            <motion.div 
+            initial="hidden"
+            whileInView="visible"
+            viewport={{once: true, amount: 0.5}}
+            transition={{ duration: 0.5 }}
+            variants={{
+                hidden: { opacity: 0, x:-50 },
+                visible: { opacity: 1, x: 0 }
+            }}
+            className={css.servicesCard}>
                 <div className={css.cardImg}>
                     <img src={shoppingImg} alt="card-img" />
                 </div>
@@ -27,8 +46,17 @@ const Services = () => {
                         Start
                     </button>
                 </div>
-            </div>
-            <div className={css.servicesCard}>
+            </motion.div>
+            <motion.div 
+            initial="hidden"
+            whileInView="visible"
+            viewport={{once: true, amount: 0.5}}
+            transition={{ duration: 0.5 }}
+            variants={{
+                hidden: { opacity: 0, x:-80 },
+                visible: { opacity: 1, x: 0 }
+            }}
+            className={css.servicesCard}>
                 <div className={css.cardImg}>
                     <img src={orderImg} alt="card-img" />
                 </div>
@@ -43,8 +71,17 @@ const Services = () => {
                         Start
                     </button>
                 </div>
-            </div>
-            <div className={css.servicesCard}>
+            </motion.div>
+            <motion.div 
+            initial="hidden"
+            whileInView="visible"
+            viewport={{once: true, amount: 0.5}}
+            transition={{ duration: 0.5 }}
+            variants={{
+                hidden: { opacity: 0, x:-110 },
+                visible: { opacity: 1, x: 0 }
+            }}
+            className={css.servicesCard}>
                 <div className={css.cardImg}>
                     <img src={supportImg} alt="card-img" />
                 </div>
@@ -59,7 +96,7 @@ const Services = () => {
                         Start
                     </button>
                 </div>
-            </div>
+            </motion.div>
         </div>
     </section>
   )

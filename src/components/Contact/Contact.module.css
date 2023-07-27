@@ -57,11 +57,15 @@
 .contactFormInput input {
     width: 150%;
     padding: 12px 28px 12px 10px;
+    border: none;
+    border-radius: 10px;
 }
 
 .contactFormInput textarea {
     width: 150%;
     padding: 12px 28px 12px 10px;
+    border: none;
+    border-radius: 10px;
 }
 
 .contactFormInput input::placeholder {

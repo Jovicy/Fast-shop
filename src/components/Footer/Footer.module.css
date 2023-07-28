@@ -17,6 +17,10 @@
     width: 50%;
 }
 
+.footerLogo img {
+    width: 100px;
+}
+
 .footerLocation {
     display: flex;
     gap: 10px;
@@ -54,4 +58,18 @@
     font-weight: 300;
     line-height: normal;
     text-transform: capitalize;
+}
+
+@media screen and (max-width: 800px) {
+    .footerMain {
+        flex-direction: column;
+        gap: 20px;
+        align-items: flex-start;
+    }
+
+    .footerLinkMain {
+        width: auto;
+    }
+
+    
 }

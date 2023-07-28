@@ -1,5 +1,5 @@
 .heroContainer {
-    /* padding: 5rem 0rem; */
+    padding: 5rem 0rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -53,4 +53,18 @@
 
 .colored {
     color: var(--blue-300);
+}
+
+@media screen and (max-width: 800px) {
+    .heroContainer {
+        flex-direction: column-reverse;
+    }
+
+    .heroImage {
+        display: none;
+    }
+
+    .heroBtnContainer {
+        flex-direction: column;
+    }
 }

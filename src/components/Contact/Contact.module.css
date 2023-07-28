@@ -87,3 +87,25 @@
 .contactIllusrator img {
     width: 550px;
 }
+
+@media screen and (max-width: 800px) {
+    .contactTitle {
+        justify-content: flex-start;
+    }
+
+    .contactForm {
+        width: 100%;
+    }
+
+    .contactFormInput input {
+        width: 100%;
+    }
+
+    .contactFormInput textarea {
+        width: 100%;
+    }
+
+    .contactIllusrator {
+        display: none;
+    }
+}

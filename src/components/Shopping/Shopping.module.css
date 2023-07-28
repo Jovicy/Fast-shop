@@ -125,3 +125,14 @@
     line-height: normal;
     text-transform: lowercase;
 }
+
+@media screen and (max-width: 800px) {
+    .shoppingCartMain {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .shoppingCart {
+        width: 100%;
+    }
+}

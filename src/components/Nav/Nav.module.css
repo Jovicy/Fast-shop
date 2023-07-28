@@ -32,3 +32,18 @@
 .navList li a:hover {
     color: var(--blue-300);
 }
+
+@media screen and (max-width: 800px) {
+    .navMain {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .navList {
+        flex-direction: column;
+    }
+    .navCont {
+        flex-direction: column;
+    }
+}
